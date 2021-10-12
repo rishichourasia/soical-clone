@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body {
+	background-color: rgb(231, 231, 231);
+}
+.navbar .navbar-nav {
+	margin-left: auto;
+	font-size: 1.5rem;
+	color: black;
+}
+.container {
+	max-width: 1000px;
+}
+.logo {
+	size: 60px;
+}
+.navbar {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+.bi {
+	text-decoration: none !important;
+	color: black;
+	padding: 0 5px;
+}
+
+.navbar .search {
+	width: 1000px;
+	display: flex;
+	justify-content: center;
+}
+.navbar input {
+	width: 200px;
+}
+
+.navbar .nav-item img {
+	height: 37px;
+	width: 37px;
+	border-radius: 100%;
+	border: 2px solid black;
+}
+.nav-item {
+	margin: 0 10px;
+}
+.nav-item i {
+	cursor: pointer;
+}
+
+.story {
+	margin-top: 90px;
+	padding: 10px;
+	display: block;
+	white-space: nowrap;
+	overflow-x: auto;
+}
+
+/* .story::-webkit-scrollbar {
+	display: none;
+} */
+.story .story-img {
+	height: 55px;
+	width: 55px;
+	border: 2px solid #c62f91;
+	border-radius: 100%;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.story img {
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+	border: 2px solid #fff;
+}
+
+.card-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.post {
+	margin: 30px 0px;
+}
+.post .buttons {
+	margin: 10px 0px;
+}
+
+.post .buttons i {
+	font-size: 1.5rem;
+	margin: 10px;
+	cursor: pointer;
+}
+.card-header i {
+	font-size: 1.5rem !important;
+}
+
+.post .buttons i.liked {
+	color: #ed4956;
+}
