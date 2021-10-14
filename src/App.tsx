@@ -11,6 +11,7 @@ import axios from "axios";
 export interface postType {
 	username: string;
 	post: string;
+	profile: string;
 }
 function App() {
 	// const user = useSelector((state: any) => state.user);

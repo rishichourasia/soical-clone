@@ -43,7 +43,7 @@ export const Navbar = () => {
 							<i className="bi bi-heart"></i>
 						</li>
 						<li className="nav-item">
-							<img src={user.profilePicture} alt="profilephoto" />
+							<img src={user.profilePicture} alt="" />
 						</li>
 					</ul>
 				</div>
