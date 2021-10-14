@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import { postType } from "../App";
 import Post from "./Post";
 
 const Landing = ({ posts }: { posts: postType[] }) => {
 	// const user = useSelector((state: any) => state.user);
 	const [story, setstory] = useState([]);
+	const user = useSelector((state: any) => state.user);
 
 	useEffect(() => {
 		axios.get("/data/story.json").then((res) => {
@@ -35,16 +37,12 @@ const Landing = ({ posts }: { posts: postType[] }) => {
 				</div>
 				<div className="col-4">
 					<div className="menu-top">
-						<img
-							className="user-img"
-							src="https://picsum.photos/100"
-							alt="hehe"
-						/>
+						<img className="user-img" src={user.profilePicture} alt="hehe" />
 						<div className="user-name">
 							<span className="span-str">
-								<strong>Richard Douglas</strong>
+								<strong>{user.username}</strong>
 							</span>
-							<span>@richardoug</span>
+							<span className="light">@richardoug</span>
 						</div>
 					</div>
 					<div className="menu-down">
