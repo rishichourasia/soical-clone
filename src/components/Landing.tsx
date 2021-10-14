@@ -56,7 +56,10 @@ const Landing = ({ posts }: { posts: postType[] }) => {
 								<div className="sug-card" key={index}>
 									<div className="sug-user" key={index}>
 										<img className="sug-img" src={stori.profile} alt="" />
-										<span className="sug-name"> {stori.username} </span>
+										<span className="sug-name">
+											{" "}
+											<strong>{stori.username}</strong>{" "}
+										</span>
 									</div>
 									<span className="follow">Follow</span>
 								</div>

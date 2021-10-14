@@ -146,7 +146,35 @@ body {
 	color: blue;
 	font-size: 0.7rem;
 }
-
+.sug-img {
+	width: 30px;
+	border-radius: 100%;
+}
+.follow {
+	color: rgb(117, 117, 250);
+}
+.light {
+	color: rgb(116, 116, 116);
+}
+.follow:hover {
+	cursor: pointer;
+}
+.sug-img :hover {
+	cursor: pointer;
+}
+.sug-user:hover {
+	cursor: pointer;
+}
+.sug-card {
+	padding: 5px;
+}
+.menu-down {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 2%;
+	border: 1px lightgray;
+	box-shadow: #8b8b8b;
+}
 /* .menu {
 	width: 25%;
 	max-width: 300px;
