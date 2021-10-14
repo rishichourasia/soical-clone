@@ -99,3 +99,114 @@ body {
 .post .buttons i.liked {
 	color: #ed4956;
 }
+
+/* suggestion post  */
+.menu-top {
+	margin-top: 95px;
+	border: 1px solid rgba(90, 87, 87, 0.125);
+	border-radius: 2%;
+	background-color: #fff;
+	display: flex;
+	padding: 10px;
+	box-shadow: grey;
+}
+.menu-top img {
+	border-radius: 100%;
+	width: 50px;
+	margin-right: 15px;
+}
+.span-str {
+	display: block;
+}
+
+.sug-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu .menu-bottom .sug-card .sug-user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+}
+.menu .menu-bottom .sug-card .sug-user .sug-img {
+	height: 35px;
+	width: 35px;
+	border-radius: 100%;
+}
+.menu .menu-bottom .sug-card .sug-user .sug-name {
+	font-size: 0.6rem;
+}
+.menu .menu-bottom .sug-card .sug-user span {
+	padding: 10px;
+}
+.menu .menu-bottom span.follow {
+	color: blue;
+	font-size: 0.7rem;
+}
+
+/* .menu {
+	width: 25%;
+	max-width: 300px;
+	margin: 0 30px 0;
+	height: 100vh;
+	position: fixed;
+	top: 90px;
+}
+.menu .menu-top {
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+}
+.menu .menu-top .user-img {
+	height: 65px;
+	width: 65px;
+	border-radius: 100%;
+	padding: 2px;
+	border: 1px solid #000;
+}
+.menu .menu-top .user-name {
+	display: flex;
+	flex-direction: column;
+	margin-left: 13px;
+	font-size: 1rem;
+}
+.menu .menu-mid {
+	margin-top: 25px;
+	font-weight: 600;
+	opacity: 0.4;
+}
+.menu .menu-bottom {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+.menu .menu-bottom .sug-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu .menu-bottom .sug-card .sug-user {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+}
+.menu .menu-bottom .sug-card .sug-user .sug-img {
+	height: 35px;
+	width: 35px;
+	border-radius: 100%;
+}
+.menu .menu-bottom .sug-card .sug-user .sug-name {
+	font-size: 0.6rem;
+}
+.menu .menu-bottom .sug-card .sug-user span {
+	padding: 10px;
+}
+.menu .menu-bottom span.follow {
+	color: blue;
+	font-size: 0.7rem;
+} */

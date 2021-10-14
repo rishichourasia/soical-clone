@@ -14,7 +14,7 @@ const Landing = ({ posts }: { posts: postType[] }) => {
 		});
 	}, []);
 
-	console.log(story);
+	// console.log(story);
 
 	return (
 		<div className="container landing">
@@ -33,7 +33,37 @@ const Landing = ({ posts }: { posts: postType[] }) => {
 							: null}
 					</div>
 				</div>
-				<div className="col-4"></div>
+				<div className="col-4">
+					<div className="menu-top">
+						<img
+							className="user-img"
+							src="https://picsum.photos/100"
+							alt="hehe"
+						/>
+						<div className="user-name">
+							<span className="span-str">
+								<strong>Richard Douglas</strong>
+							</span>
+							<span>@richardoug</span>
+						</div>
+					</div>
+					<div className="menu-down">
+						<div className="menu-mid">
+							<p className="light"> Suggestions for you</p>
+						</div>
+						<div className="suggest-box">
+							{story.slice(0, 4).map((stori: any, index: number) => (
+								<div className="sug-card" key={index}>
+									<div className="sug-user" key={index}>
+										<img className="sug-img" src={stori.profile} alt="" />
+										<span className="sug-name"> {stori.username} </span>
+									</div>
+									<span className="follow">Follow</span>
+								</div>
+							))}
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);
